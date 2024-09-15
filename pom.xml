@@ -58,7 +58,7 @@
         </dependency>
     </dependencies>
 
-    <build>
+<build>
     <plugins>
         <!-- Spring Boot Maven Plugin -->
         <plugin>
@@ -82,4 +82,5 @@
         </plugin>
     </plugins>
 </build>
+
 </project>
