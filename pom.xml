@@ -75,14 +75,19 @@
 <build>
     <plugins>
         <!-- Spring Boot Maven Plugin -->
-        <plugin>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-maven-plugin</artifactId>
-            <version>${spring-boot.version}</version>
-            <configuration>
-                <mainClass>com.coffeeshop.CoffeeShopApplication</mainClass>
-            </configuration>
-        </plugin>
+    <plugin>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-maven-plugin</artifactId>
+    <version>${spring-boot.version}</version>
+    <executions>
+        <execution>
+            <goals>
+                <goal>repackage</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
+
 
         <!-- Maven Compiler Plugin -->
         <plugin>
